@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "Hello Extensions",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "author": "shubhamchopde090@gmail.com",
+
+  "permissions":["tabs","storage"],
+  "host_permissons":["https://*.youtube.com/*"],
+
+  "background":{
+    "service-worker": "background.js"
+  },
+  
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16":"assets/ext-icon.png",
+      "24":"assets/ext-icon.png",
+      "32":"assets/ext-icon.png"
+    },
+    "default_title": ""
+  },
+ 
+  "content_scripts":[
+    {
+      "matches":["https://*.youtube.com/*"],
+      "js":["contentscript.js"]
+    }
+  ],
+  "icons":{
+    "128":"assets/ext-icon.png",
+    "18":"assets/ext-icon.png"
+  },
+ 
+ 
+
+ 
+
+  "web-accessible-resources":[
+    {
+      "resources":[
+        "assets/bookmark.png",
+        "assets/play.png",
+        "assets/delete.png",
+        "assets/save.png"
+      ]
+    }
+  ]
+
+}
