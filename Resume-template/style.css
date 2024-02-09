@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/********************
+Download button 
+*/
+.Dow-button {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #17795E;
+    background-color: #209978;
+    overflow: hidden;
+  }
+  
+  .Dow-button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .Dow-button .button__text {
+    transform: translateX(22px);
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .Dow-button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #17795E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Dow-button .svg {
+    width: 20px;
+    fill: #fff;
+  }
+  
+  .Dow-button:hover {
+    background: #17795E;
+  }
+  
+  .Dow-button:hover .button__text {
+    color: transparent;
+  }
+  
+  .Dow-button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .Dow-button:active .button__icon {
+    background-color: #146c54;
+  }
+  
+  .Dow-button:active {
+    border: 1px solid #146c54;
+  }
+
+  /********************
+End
+*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+section{
+display: flex;
+justify-content: space-between;
+}
+.left{
+width: 30%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.right{
+width: calc(100% - 30%);
+display: flex;
+    justify-content: center;
+}
+.box1{
+    height: 80%;
+    width:80% ;
+}
+.box1-head{
+    background-color: red;
+    width: auto;
+    height: 130px;
+}
+.main1{
+    display: flex;
+   width: 100%;  
+}
+.part1{
+width: 40%;
+background-color: #209978;
+height:20rem;
+}
+.part2{
+    width: 60%;
+    height: 20rem;
+    background-color: blueviolet;
+}
+
+.location-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.EmploymentSectionDiv{
+    display: flex;
+    flex-direction: column;
+}
