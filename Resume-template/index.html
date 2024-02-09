@@ -10,7 +10,8 @@
 <body onload="details()">
     <header>
         <img src="225907-200.png" alt="" width="80px">
-        <a href="path_to_your_file.pdf" download="filename.pdf">
+      
+           
         <button class="Dow-button" type="button" id="dow-btn">
             <span class="button__text">Download</span>
             <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
@@ -33,11 +34,11 @@
 <!--  -->
      <form id="color1">
         <label for="headerBgColor">Header Color</label>
-        <input id="headerBgColor" type="color">
+        <input id="headerBgColor" type="color" value="#ff0000">
     </form>
     <form id="headerTxtcolor">
         <label for="txtColor">Header Text Color</label>
-        <input id="txtColor" type="color">
+        <input id="txtColor" type="color" >
     </form>
 
     <!--  -->
@@ -51,34 +52,65 @@
     </form>
     <!--  -->
     <form id="personaldetails">
-       <label for="jobTitle" >Professional Details</label>
+        <label for="jobTitle" >Professional Details</label>
         <input id="jobTitle" type="text" placeholder="Wanted job Title">
-        <textarea name="" id="textarea10" cols="30" rows="10" placeholder="Professional Summary"></textarea>
         <input type="text" id="skill" placeholder="Skills">
          
     </form>
+    <!--  -->
+    
+    <form id="color1">
+        <label for="headerBgColor2">Header Color</label>
+        <input id="headerBgColor2" type="color" value="#ff0000">
+    </form>
+    <form id="headerTxtcolor">
+        <label for="txtColor2">Header Text Color</label>
+        <input id="txtColor2" type="color" >
+    </form>
+    <textarea name="" id="textarea10" cols="30" rows="10" placeholder="Professional Summary"></textarea>
     <!--  -->
     <button style="background-color: green;" id="AddEmploymentBtn">Add Employment</button>
     <form action="" id="EmploymentSection">
      
     </form>
 <!--  -->
+    <button style="background-color: green;" id="AddProjectBtn">Add Project</button>
+    <form action="" id="AddProject">
+    
+    </form>
+
+    
+    <h2>Educational Background</h2>
+    <button style="background-color: green;" id="EducationalBtn">Add Education</button>
+    <form action="" id="EducationalSection">
+   
+
+    </form>
+
+
 
         </div>
+       
         <div class="right">
-         <div class="box1" style="border: 1px solid red;">
+         <div class="box1" >
             <div class="box1-head">
+               <div class=" box1-headp1" style="width: 35%;">
+            <div id="userimg" >
+                <form action="/upload_image" method="post" enctype="multipart/form-data">
+                    <img src="./225907-200.png" alt="">
+                  </form>
+            </div>
+        </div>
+            <div class=" box1-headp2" style="width: 65%;">
                 <h1 id="innerName"></h1>
                 <p id="innerSkill"></p>
+            </div>
  
             </div>
 
             <div class="main1">
                 <div class="part1">
-                    <h2>Skills</h1>
-                    <p id="skillDetails"></p>
-                    <h2>Contact</h2>
-                    
+                    <h2 class="line">Contact</h2>
                     <div class="location-details">
                         <span>
                         <span class="material-symbols-outlined">call</span>
@@ -95,7 +127,9 @@
                         <p id="locationDetails"></p>
                     </span>
 
-                    </div>           
+                    </div> 
+                    <h2 class="line">Skills</h1>
+                        <p id="skillDetails"></p>          
 
 
                 </div>

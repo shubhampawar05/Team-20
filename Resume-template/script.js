@@ -1,14 +1,42 @@
 
 
-selectType1.addEventListener("click",()=>{
-    console.log(selectType1.value)
-})
 
 
 function details(){
     let selectType1=document.getElementById("selectType1");
-    let headerBgColor=document.getElementById("headerBgColor").value;
-    let txtColor=document.getElementById("txtColor");
+    let  part1=document.querySelector(".part1");
+    let  box1headp1=document.querySelector(".box1-headp1");
+    let headerBgColor=document.getElementById("headerBgColor").addEventListener("input",(e)=>{
+        
+        part1.style.backgroundColor=e.target.value;
+        box1headp1.style.backgroundColor=e.target.value;
+    });
+
+    let txtColor=document.getElementById("txtColor").addEventListener("input",(e)=>{
+        console.log(e.target.value)
+        part1.style.color=e.target.value;
+        box1headp1.style.color=e.target.value;
+    });
+
+    let  box1headp2=document.querySelector(".box1-headp2");
+    let  part2=document.querySelector(".part2");
+    let headerBgColor2=document.getElementById("headerBgColor2").addEventListener("input",(e)=>{
+        
+        part2.style.backgroundColor=e.target.value;
+        box1headp2.style.backgroundColor=e.target.value;
+    });
+    let txtColor2=document.getElementById("txtColor2").addEventListener("input",(e)=>{
+        console.log(e.target.value)
+        part2.style.color=e.target.value;
+        box1headp2.style.color=e.target.value;
+    });
+    // selectType1.addEventListener("click",(e)=>{
+    //     part1.style.backgroundColor=e.target.value;
+    //     console.log(e.target.value)
+    //     details()
+    // })
+    
+    
 
     // header part
     let innerName=document.getElementById("innerName");
@@ -68,12 +96,57 @@ function details(){
     
         <input type="text" name="" id="jobTitle2" placeholder="job Title">
         <input type="text" name="" id="Employer2" placeholder="Employer">
-        <textarea name="" id="descriptionText2" cols="30" rows="10"></textarea>
+        <textarea name="" id="descriptionText2" cols="30" rows="10" placeholder="Description"></textarea>
         
         
         `
         EmploymentSection.appendChild(div)
     });
+
+    let AddProjectBtn=document.getElementById("AddProjectBtn").addEventListener("click",()=>{
+       
+        
+        let AddProject=document.getElementById("AddProject");
+        let div=document.createElement("div");
+        div.classList.add("EmploymentSectionDiv");
+
+
+        div.innerHTML=`
+        <label for="EmploymentStartDate">Start</label>
+        <input type="date" id="AddProjectStartDate">
+    
+        <label for="EmploymentEndDate">End</label>
+        <input type="date" id="AddProjectEndDate">
+    
+        <input type="text" name="" id="AddProjectTitle" placeholder="Project Title">
+        <textarea name="" id="AddProjectDescription" cols="30" rows="10" placeholder="Description"></textarea>
+        
+        
+        `
+        AddProject.appendChild(div)
+    });
+
+
+let EducationalBtn=document.getElementById("EducationalBtn").addEventListener("click",()=>{
+    let AddProject=document.getElementById("EducationalSection");
+  
+  
+    AddProject.innerHTML=`
+    <label for="EducationalStartDate">Start</label>
+    <input type="date" id="EducationalStartDate">
+
+    <label for="EmploymentEndDate">End</label>
+    <input type="date" id="EducationalEndDate">
+
+    <input type="text" name="" id="jobTitle3" placeholder="Qualification">
+    <input type="text" name="" id="jobTitle3" placeholder="School/College">
+    <textarea name="" id="descriptionText3" cols="30" rows="10" placeholder="Description"></textarea>
+    
+    
+    `
+    
+});
+
 
    
    
