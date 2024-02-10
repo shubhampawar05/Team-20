@@ -9,7 +9,7 @@
 </head>
 <body onload="details()">
     <header>
-        <img src="225907-200.png" alt="" width="80px">
+        <img src="225907-200.png" alt="" width="65px">
       
            
         <button class="Dow-button" type="button" id="dow-btn">
@@ -80,7 +80,7 @@
     </form>
 
     
-    <h1>Educational Background</h1>
+    <h1 class="ed1">Educational Background</h1>
     <button style="background-color: green;" id="EducationalBtn">Add Education</button>
     <form action="" id="EducationalSection">
    
@@ -96,9 +96,12 @@
             <div class="box1-head">
                <div class=" box1-headp1" >
             <div id="userimg" >
-                <form action="/upload_image" method="post" enctype="multipart/form-data">
+                <!-- <form action="/upload_image" method="post" enctype="multipart/form-data">
                     <img src="./225907-200.png" alt="">
-                  </form>
+                  </form> -->
+                  <!-- <img id="logoimg2" src="./225907-200.png" alt=""> -->
+                  <input type="file" id="uploadInput" accept="image/*" onchange="previewImage(event)">
+                  <div id="preview"></div>
             </div>
             <div class="  box1-headp3" >
                 <h1 id="innerName2"></h1>

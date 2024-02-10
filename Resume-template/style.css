@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body{
+  /* background-image: linear-gradient(to top, #09203f 0%, #537895 100%); */
+  background-color:  #132b4d;
+}
 
 
 
@@ -77,11 +81,12 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 13px 20px;
     position: sticky;
     top: 0;
-    background-color: rgb(219, 19, 19);
+    background-color: #132b4d;
     z-index: 2;
+    border-bottom:1px solid white;
 }
 
 section{
@@ -90,6 +95,9 @@ justify-content: space-between;
 padding-bottom: 20rem;
 padding: 30px;
 
+}
+textarea{
+  max-width: 100%;
 }
 .left{
 width: 30%;
@@ -103,6 +111,10 @@ label{
   padding: 10px 0px;
   font-size: 18px;
   font-weight:bold;
+  color: white;
+}
+.ed1{
+  color: white;
 }
 select{
   padding: 5px 5px 5px 5px;
@@ -137,11 +149,11 @@ display: flex;
     justify-content: end;
     height: fit-content;
     position: sticky;
-    top: 101px;
+    top: 120px;
     z-index: 1;
 }
 #userimg{
-  background-color: wheat;
+ 
   width: 100px;
   height: 100px;
  
@@ -188,6 +200,7 @@ display: flex;
     width:80% ;
     border: 1px solid black;
     display: flex;
+    border: 1px solid #a6a6a6;
 }
 .box1-head{
   display: flex;    
@@ -199,7 +212,7 @@ display: flex;
   
 }
 .main1{
-    
+    background-color: white;
    width: calc(100% - 35%);  
 }
 
@@ -282,4 +295,51 @@ color: white;
 .para1{
   font-size: 18px;
   font-weight:900;
+}
+
+#preview {
+  width: 300px;
+  height: 300px;
+  z-index: 3;
+
+}
+#uploadInput{
+  padding-top: 36px;
+  font-size: 15px;
+  background: transparent;
+  border: none;
+  height: 100%;
+  z-index: 2;
+  display: none;
+
+  /* transition: 10s ease; */
+ 
+  /* display: none; */
+}
+#userimg{
+  /* transition: 10s ease; */
+  background-image: url("./585e4bf3cb11b227491c339a.png");
+  cursor: pointer;
+  box-shadow: 0px 0px 9px 0px black;
+  width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: contain;
+}
+#userimg:hover #uploadInput{
+  display: block;
+  opacity: 0;
+
+  /* transition: 10s ease; */
+  background-color: white;
+}
+.eschng2{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width:768px){
+  .box1-headp1{
+    display: block;
+  }
 }

@@ -262,6 +262,8 @@ function details(){
     let EducationalBtn=document.getElementById("EducationalBtn").addEventListener("click",()=>{
         
         let div=document.createElement("div");
+        div.setAttribute("class","eschng2");
+        
         div.innerHTML=`
             <label for="EducationalStartDate">Start</label>
             <input type="date" id="EducationalStartDate">
@@ -392,5 +394,26 @@ function details(){
 }
 
 
+
 }
 
+function previewImage(event) {
+    var input = event.target;
+    var reader = new FileReader();
+
+    reader.onload = function(){
+      var dataURL = reader.result;
+      var preview = document.getElementById('preview');
+      var img = document.createElement('img');
+      img.src = dataURL;
+      img.style.Width = '100%';
+      img.style.Height = '100%';
+      preview.innerHTML = '';
+      preview.appendChild(img);
+      let uploadInput=document.getElementById("uploadInput");
+      uploadInput.style.display="none"
+    };
+
+    reader.readAsDataURL(input.files[0]);
+  }
+  
