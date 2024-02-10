@@ -78,12 +78,17 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(219, 19, 19);
+    z-index: 2;
 }
 
 section{
 display: flex;
 justify-content: space-between;
 padding-bottom: 20rem;
+padding: 30px;
 
 }
 .left{
@@ -94,12 +99,46 @@ form{
     display: flex;
     flex-direction: column;
 }
-
+label{
+  padding: 10px 0px;
+  font-size: 18px;
+  font-weight:bold;
+}
+select{
+  padding: 5px 5px 5px 5px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+input{
+  padding: 5px 5px 5px 5px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+#headerBgColor,#txtColor,#headerBgColor2,#txtColor2{
+  padding: 0px;
+}
+#AddEmploymentBtn,#AddProjectBtn,#EducationalBtn{
+  width: 100%;
+  font-size: 15px;
+    color: white;
+    padding: 8px;
+    border: none;
+    margin: 10px 0px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.box1-headp3{
+  display: none;
+}
 .right{
 width: calc(100% - 30%);
 display: flex;
-    justify-content: center;
-    height: 100vh;
+    justify-content: end;
+    height: fit-content;
+    position: sticky;
+    top: 101px;
+    z-index: 1;
 }
 #userimg{
   background-color: wheat;
@@ -112,9 +151,7 @@ display: flex;
 #name1{
 
 }
-.box1-head{
 
-}
 .line{
   border-bottom: 1px solid white;
   font-size: 18px;
@@ -127,7 +164,7 @@ display: flex;
 
 .box1-headp1{
   
-  height: 100%;
+
   padding: 30px;
   display: flex;
   align-items: center;
@@ -135,8 +172,8 @@ display: flex;
 }
 
 .box1-headp2{
- background-color: white;
-  height: 100%;
+
+  
   padding: 30px;
 }
 #innerName{
@@ -147,37 +184,36 @@ display: flex;
   border-bottom: 1px solid black;
 }
 .box1{
-    height: 100%;
+    /* height: 100%; */
     width:80% ;
     border: 1px solid black;
+    display: flex;
 }
 .box1-head{
   display: flex;    
-  justify-content: space-between;
+  width: 35%;
   background-color:#323b4c;
-  width: auto;
-  height: 130px;
 
-  align-items: center;
+  flex-direction: column;
+
   
 }
 .main1{
-    display: flex;
-   width: 100%;  
-   height: calc(100% - 130px);
+    
+   width: calc(100% - 35%);  
 }
 
 
 
 .part1{
-width: 35%;
-background-color: #323b4c;
-height: 100%;
+
+color: white;
 padding: 30px;
+
 }
 .part2{
-    width: 65%;
-    height: 100%;
+   
+   
     padding: 30px;
    
 }
@@ -186,7 +222,9 @@ padding: 30px;
   border-bottom: 1px solid black;
   
 }
-
+.skillDetails{
+  color: white;
+}
 .location-details{
     display: flex;
     flex-direction: column;
@@ -202,8 +240,46 @@ padding: 30px;
 #skillDetails{
   padding: 15px 0px;
   word-wrap: break-word;
+
 }
 .EmploymentSectionDiv{
     display: flex;
     flex-direction: column;
+}
+#summarytxt,#professionaltxt,#projectstxt,#educationtxt{
+padding-bottom: 1rem;
+padding-top: 1rem;
+word-wrap: break-word;
+line-height: 24px;
+}
+
+.detailbox{
+  padding-top: 12px;
+}
+.detailsbox2{
+  display: flex;
+  justify-content: space-between;
+}
+.spanbox{
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+}
+#innerName2{
+padding-top: 30px;
+color: white;
+}
+#innerSkill2{
+padding-top: 10px;
+color: white;
+}
+.alltext{
+  /* color: white; */
+}
+.para2,.para3{
+
+}
+.para1{
+  font-size: 18px;
+  font-weight:900;
 }

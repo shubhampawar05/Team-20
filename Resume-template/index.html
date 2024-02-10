@@ -80,7 +80,7 @@
     </form>
 
     
-    <h2>Educational Background</h2>
+    <h1>Educational Background</h1>
     <button style="background-color: green;" id="EducationalBtn">Add Education</button>
     <form action="" id="EducationalSection">
    
@@ -94,56 +94,64 @@
         <div class="right">
          <div class="box1" >
             <div class="box1-head">
-               <div class=" box1-headp1" style="width: 35%;">
+               <div class=" box1-headp1" >
             <div id="userimg" >
                 <form action="/upload_image" method="post" enctype="multipart/form-data">
                     <img src="./225907-200.png" alt="">
                   </form>
             </div>
-        </div>
-            <div class=" box1-headp2" style="width: 65%;">
-                <h1 id="innerName"></h1>
-                <p id="innerSkill"></p>
+            <div class="  box1-headp3" >
+                <h1 id="innerName2"></h1>
+                <p id="innerSkill2"></p>
             </div>
+        </div>
+        <div class="part1">
+            <h1 class="line">Contact</h1>
+            <div class="location-details">
+                <span>
+                <span class="material-symbols-outlined">call</span>
+                <p id="callDetails" class="alltext"></p>
+               </span>
+
+            <span>
+                <span class="material-symbols-outlined">mail</span>
+                <p id="mailDetails" class="alltext"></p>
+            </span>
+
+            <span>
+                <span class="material-symbols-outlined loc">location_on</span>
+                <p id="locationDetails" class="alltext loc"></p>
+             </span>
+
+            </div> 
+            <h1 class="line">Skills</h1>
+                <p id="skillDetails" class="alltext"  ></p>          
+
+
+        </div>
+            
  
             </div>
 
             <div class="main1">
-                <div class="part1">
-                    <h2 class="line">Contact</h2>
-                    <div class="location-details">
-                        <span>
-                        <span class="material-symbols-outlined">call</span>
-                        <p id="callDetails"></p>
-                       </span>
-
-                       <span>
-                        <span class="material-symbols-outlined">mail</span>
-                        <p id="mailDetails"></p>
-                    </span>
-
-                        <span>
-                        <span class="material-symbols-outlined">location_on</span>
-                        <p id="locationDetails"></p>
-                    </span>
-
-                    </div> 
-                    <h2 class="line">Skills</h1>
-                        <p id="skillDetails"></p>          
-
-
+                
+                <div class=" box1-headp2 box1-headp21" >
+                    <h1 id="innerName"></h1>
+                    <p id="innerSkill"></p>
                 </div>
-
                 <div class="part2">
                     <h2>SUMMARY</h2>
-                    <p></p>
+                    <p id="summarytxt"></p>
                     <h2>PROFESSIONAL EXPERIENCE</h2>
-                    <p></p>
+                    <div id="professionaltxt">
+
+                    </div>
                     <h2>PROJECTS</h2>
-                    <p></p>
+                    <div id="projectstxt"></div>
                     <h2>EDUCATION</h2>
-                    <p></p>
+                    <p id="educationtxt"></p>
                 </div>
+               
 
             </div>
 
@@ -152,6 +160,7 @@
         </div>
 
     </section>
+   
     <script src="./script.js"></script>
 </body>
 </html>
