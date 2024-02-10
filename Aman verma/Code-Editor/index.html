@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code-Editor</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <section>
+        <div class="box">
+        <form action="" id="htmlbox" class="commonbox">
+            <label for="htmlcode"><i class="fa-brands fa-html5"></i>HTML</label>
+            <textarea name="htmlcode" id="htmlcode" cols="30" rows="10" onkeyup="fun()"></textarea>
+        </form>
+
+        <form action="" id="cssbox" class="commonbox">
+            <label for="csscode"><i class="fa-brands fa-css3-alt"></i>CSS</label>
+            <textarea name="csscode" id="csscode" cols="30" rows="10" onkeyup="fun()"></textarea>
+        </form>
+
+        <form action="" id="jsbox" class="commonbox">
+            <label for="jscode"><i class="fa-brands fa-js"></i>JS</label>
+            <textarea name="jscode" id="jscode" cols="30" rows="10" onkeyup="fun()"></textarea>
+        </form>
+    </div>
+    <form action="" id="outputbox">
+        <label for="jscode"><i class="fa-solid fa-play"></i>Output</label>
+        <iframe id="output"></iframe>
+    </form>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
