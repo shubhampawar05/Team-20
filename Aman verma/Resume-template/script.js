@@ -438,25 +438,27 @@ function previewImage(event) {
 
   let downloadbtn=document.querySelector("#dow-btn");//dow btn
 
-downloadbtn.addEventListener("click",function(){
-    let secondDownload =document.querySelector(".box1");
+// downloadbtn.addEventListener("click",function(){
+//     let secondDownload =document.querySelector(".box1");
   
     
-    html2pdf().from(secondDownload).save();
-    // secondDownload.style.width="100%"
+    // html2pdf().from(secondDownload).save();
+    // // secondDownload.style.width="100%"
     
 
 
-})
+// })
 
-//   function generatePDF() {
-//     const element = document.getElementById('pdfdow');
-//     html2pdf(element, {
-//         margin: 10,
-//         filename: "resume.pdf",
-//         image: { type: "jpeg", quality: 0.98 },
-//         html2canvas: { scale: 2 },
-//         jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
-//       });
-// }
+  function generatePDF() {
+    const element = document.querySelector('#pdfdow');
+        element.style.width="100%"
+
+    html2pdf(element, {
+        margin: 10,
+        filename: "resume.pdf",
+        image: { type: "jpeg", quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+      });
+}
 
