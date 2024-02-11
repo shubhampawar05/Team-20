@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.js"></script>
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script> -->
 
 
@@ -174,29 +174,9 @@
     </section>
 
 
-    <!-- <script>
-
-let downloadBtn = document.querySelector(".Dowbutton");
-
-downloadBtn.addEventListener("click", function() {
-    let box1 = document.querySelector(".box1");
-    if (!box1) {
-        console.error("Box not found");
-        return;
-    }
-    
-    console.log("Generating PDF from:", box1);
-    html2pdf().from(box1).toPdf().get('pdf').then(function(pdf) {
-        // Delay the download by 1 second (adjust the delay time as needed)
-        setTimeout(function() {
-            console.log("Saving PDF");
-            pdf.save();
-        }, 1000); // 1000 milliseconds = 1 second
-    });
-});
 
 
-    </script> -->
+
 
 <script src="./script.js"></script>
      

@@ -234,7 +234,7 @@ display: flex;
     width:80% ;
     border: 1px solid black;
     display: flex;
-    border: 1px solid #9b5757;
+    border: 1px solid #d5c3c3;
 }
 .box1-head{
   display: flex;    
@@ -270,7 +270,7 @@ padding: 30px;
   
 }
 .skillDetails{
-  color: white;
+
 }
 .location-details{
     display: flex;
