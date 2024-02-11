@@ -440,13 +440,11 @@ function previewImage(event) {
 
 downloadbtn.addEventListener("click",function(){
     let secondDownload =document.querySelector(".box1");
-    // let box1head=document.querySelector(".box1-head");
-    // let main1=document.querySelector(".main1");
+  
     
     html2pdf().from(secondDownload).save();
-    secondDownload.style.width="100%"
-    // box1head.style.width="50%"
-    // main1.style.width="100%"
+    // secondDownload.style.width="100%"
+    
 
 
 })
