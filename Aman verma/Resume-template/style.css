@@ -205,7 +205,8 @@ display: flex;
 }
 .material-symbols-outlined{
   color: white;
-  font-size: 21px !important;
+  font-size: 18px !important;
+  font-weight: 600;
 }
 
 .box1-headp1{
@@ -322,6 +323,9 @@ color: white;
 }
 .alltext{
   /* color: white; */
+  word-wrap: break-word;
+  padding-top: 8px;
+  line-height: 24px;
 }
 .para2,.para3{
 
