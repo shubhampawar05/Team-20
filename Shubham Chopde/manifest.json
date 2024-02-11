@@ -1,15 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "Hello Extensions",
+  "name": "Youtube Bookmar Extensions",
   "description": "Base Level Extension",
   "version": "1.0",
   "author": "shubhamchopde090@gmail.com",
 
-  "permissions":["tabs","storage"],
-  "host_permissons":["https://*.youtube.com/*"],
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://*.youtube.com/*"],
 
   "background":{
-    "service-worker": "background.js"
+    "service_worker": "background.js",
+    "type": "module"
   },
   
   "action": {
@@ -19,7 +20,7 @@
       "24":"assets/ext-icon.png",
       "32":"assets/ext-icon.png"
     },
-    "default_title": ""
+    "default_title": "YT Bookmarks"
   },
  
   "content_scripts":[
@@ -32,19 +33,15 @@
     "128":"assets/ext-icon.png",
     "18":"assets/ext-icon.png"
   },
- 
- 
-
- 
-
-  "web-accessible-resources":[
+  "web_accessible_resources": [
     {
-      "resources":[
+      "resources": [
         "assets/bookmark.png",
         "assets/play.png",
         "assets/delete.png",
         "assets/save.png"
-      ]
+      ],
+      "matches": ["https://*.youtube.com/*"]
     }
   ]
 
