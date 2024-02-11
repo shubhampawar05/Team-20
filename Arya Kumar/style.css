@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #31364e;
+}
+
+main {
+    width: 60%;
+    background-color: #54a5d4;
+    min-width: auto;
+    color: white;
+}
+
+.one {
+    min-height: 8rem;
+    max-height: fit-content;
+    display: flex;
+    align-items: center;
+
+}
+
+.two {
+    min-height: 8rem;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.three {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: max-content;
+    min-height: fit-content;
+}
+
+.left {
+    width: 70%;
+    background: linear-gradient(-60deg, rgba(226, 244, 255, 0.3) 5%, rgba(84, 107, 115, 0.3) 95%);
+    padding: 10px;
+}
+
+.bar {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.barleft {
+    width: 50%;
+}
+
+.baright {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: end;
+}
+
+.box {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 2px;
+    background-color: black;
+    padding: 2px;
+
+}
+
+.box p {
+    color: white;
+    padding: 0px 10px;
+}
+
+.box button {
+    background-color: green;
+    color: white;
+    outline: none;
+    border: 1px solid black;
+    padding: 5px 15px;
+}
+.top{
+    display: flex;
+}
+.bottom{
+    display:flex ;
+    flex-direction: column;
+    gap: 5px;
+}
+.bottom p{
+    height: 22px;
+    padding-top: 4px;
+    padding-left: 8px;
+    background-color: #010c42;
+}
