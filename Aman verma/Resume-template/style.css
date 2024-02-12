@@ -182,8 +182,8 @@ width: calc(100% - 30%);
 display: flex;
     justify-content: end;
     height: fit-content;
-    position: sticky;
-    top: 120px;
+    /* position: sticky;
+    top: 120px; */
     z-index: 1;
 }
 #userimg{
