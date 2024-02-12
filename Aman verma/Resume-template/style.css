@@ -181,7 +181,7 @@ display: none;
 width: calc(100% - 30%);
 display: flex;
   justify-content: end;
-  height: fit-content;
+  height: auto;
   /* position: sticky;
   top: 120px; */
   z-index: 1;
