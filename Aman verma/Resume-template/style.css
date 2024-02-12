@@ -231,7 +231,8 @@ font-size: 22px;
 border-bottom: 1px solid black;
 }
 .box1{
-
+min-height: 200vh;
+height: fit-content;
   width:80% ;
   border: 1px solid black;
   display: flex;
