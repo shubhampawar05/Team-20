@@ -396,7 +396,7 @@ function twoColumnFun(){
     let box1head=document.querySelector(".box1-head");
     box1head.style.width="35%"
     box1head.style.flexDirection="column"
-    box1head.style.justifyContent="space-between"
+    box1head.style.justifyContent="normal"
     let  main1=document.querySelector(".main1");
     main1.style.width="calc(100% - 35%)";
     

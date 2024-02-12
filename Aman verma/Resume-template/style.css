@@ -182,8 +182,8 @@ width: calc(100% - 30%);
 display: flex;
   justify-content: end;
   height: fit-content;
-  position: sticky;
-  top: 120px;
+  /* position: sticky;
+  top: 120px; */
   z-index: 1;
 }
 #userimg{
@@ -231,7 +231,7 @@ font-size: 22px;
 border-bottom: 1px solid black;
 }
 .box1{
-  height: 150vh;
+
   width:80% ;
   border: 1px solid black;
   display: flex;
