@@ -35,48 +35,51 @@ document.querySelector('#start').addEventListener('click', (e) => {
 
     }, 1000);
 
-
+    let j = 0;
     document.querySelector('textarea').addEventListener('input', () => {
 
         let arr = over.querySelectorAll('span');
 
         let target = input.value.split('')
 
-        // if (target[j] === arr[j].innerText) {
-        //     target.style.color = "green"
-        //     // target[j].classList.remove('incorrect');
+        if (target[j] == arr[j].innerText) {
+            target[j].style.color = "green"
+            // target[j].classList.remove('incorrect');
+            console.log(j);
+            console.log("working if");
+            j++
+        }
+        else {
+            target.classList.add('incorrect');
+            target.classList.remove('correct');
+            console.log("working else");
+            j++
+        }
 
-        //     console.log("working if");
-        //     j++
-        // }
-        // else{
-        //     target.classList.add('incorrect');
-        //     target.classList.remove('correct');
-        //     console.log("working else");
-        //     j++
-        // }
+
+        console.log(target);
+
+        // arr.forEach((e, i) => {
+
+        //     //target is the user input
+        //     //arr is the text displayed
+
+        //     if(target[i] == null){
+        //         e.classList.remove('correct');
+        //         e.classList.remove('incorrect');
+
+        //     }
+        //     else if (target[i] === e.innerText) {
+        //         e.classList.add('correct');
+        //         e.classList.remove('incorrect');
+        //     }
+        //     else if (target[i] !== e.innerText) {
+        //         e.classList.add('incorrect');
+        //         e.classList.remove('correct');
+        //     }
+        // })
 
 
-        // console.log(target);
-        arr.forEach((e, i) => {
-
-            //target is the user input
-            //arr is the text displayed
-
-            if(target[i] == null){
-                e.classList.remove('correct');
-                e.classList.remove('incorrect');
-                // console.log(target[i]);
-            }
-            else if (target[i] === e.innerText) {
-                e.classList.add('correct');
-                e.classList.remove('incorrect');
-            }
-            else if (target[i] !== e.innerText) {
-                e.classList.add('incorrect');
-                e.classList.remove('correct');
-            }
-        })
         // wro++;
         // cpm.innerText = `Mistake :${wro}`
     })
