@@ -1,5 +1,5 @@
 
-console.log('This is background.js File start');
+// console.log('This is background.js File start');
 chrome.tabs.onUpdated.addListener((tabId, tab) => {
   // it check for youtub page is it or not 
    // storing tabId or tab url from tab object 
@@ -12,4 +12,4 @@ chrome.tabs.onUpdated.addListener((tabId, tab) => {
     });
   }
 });
-console.log('This is background.js File end');
+// console.log('This is background.js File end');

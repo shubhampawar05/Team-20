@@ -442,19 +442,30 @@ function previewImage(event) {
 //     let secondDownload =document.querySelector(".box1");
   
     
+<<<<<<< HEAD
 //     html2pdf().from(secondDownload).save();
 //     // secondDownload.style.width="100%"
+=======
+    // html2pdf().from(secondDownload).save();
+    // // secondDownload.style.width="100%"
+>>>>>>> ff8dd8bb6929de56b94e8335321330a86f3b4de6
     
 
 
 // })
 
   function generatePDF() {
+<<<<<<< HEAD
 
     const element = document.getElementById('pdfdow');
     const left = document.querySelector('.left');
     element.style.width="100%"
     left.style.width="20%"
+=======
+    const element = document.querySelector('#pdfdow');
+        element.style.width="100%"
+
+>>>>>>> ff8dd8bb6929de56b94e8335321330a86f3b4de6
     html2pdf(element, {
         margin: 10,
         filename: "resume.pdf",
@@ -462,6 +473,9 @@ function previewImage(event) {
         html2canvas: { scale: 2 },
         jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
       });
+<<<<<<< HEAD
       console.log("run");
+=======
+>>>>>>> ff8dd8bb6929de56b94e8335321330a86f3b4de6
 }
 
