@@ -8,20 +8,20 @@ let test = document.querySelector('.top p');
 
 let timer
 let sec = 60;
-
+let x = 0;
 let input = document.querySelector('textarea');
 let over = document.querySelector('.over')
 
 
-let cor = 0;
-let wro = 0;
-
-
+input.disabled = true
 document.querySelector('#start').addEventListener('click', (e) => {
     e.target.disabled = true;
+    input.disabled = false;
+    input.value = ""
+    document.querySelector("textarea").focus();
 
     timer = setInterval(() => {
-
+        x++;
         sec -= 1;
 
         time.innerText = `Time left :${sec}s`
@@ -31,58 +31,57 @@ document.querySelector('#start').addEventListener('click', (e) => {
             clearInterval(timer);
             e.target.disabled = false
             sec = 60;
+            input.disabled = true;
+            
         }
 
     }, 1000);
 
-    let j = 0;
+    
     document.querySelector('textarea').addEventListener('input', () => {
 
         let arr = over.querySelectorAll('span');
 
         let target = input.value.split('')
 
-        if (target[j] == arr[j].innerText) {
-            target[j].style.color = "green"
-            // target[j].classList.remove('incorrect');
-            console.log(j);
-            console.log("working if");
-            j++
-        }
-        else {
-            target.classList.add('incorrect');
-            target.classList.remove('correct');
-            console.log("working else");
-            j++
-        }
+        let wro = 0;
+        let char = 0;
 
+        arr.forEach((e, i) => {
 
-        console.log(target);
+            //target is the user input
+            //arr is the text displayed
 
-        // arr.forEach((e, i) => {
+            if(target[i] == null){
+                e.classList.remove('correct');
+                e.classList.remove('incorrect');
+                
+            }
+            else if (target[i] === e.innerText) {
+                e.classList.add('correct');
+                e.classList.remove('incorrect');
+                char++;
+            }
 
-        //     //target is the user input
-        //     //arr is the text displayed
+            else if (target[i] !== e.innerText) {
+                e.classList.add('incorrect');
+                e.classList.remove('correct');
+                char++;
+            }
 
-        //     if(target[i] == null){
-        //         e.classList.remove('correct');
-        //         e.classList.remove('incorrect');
+            if(e.classList.contains('incorrect')){
+                wro++;
+            }
 
-        //     }
-        //     else if (target[i] === e.innerText) {
-        //         e.classList.add('correct');
-        //         e.classList.remove('incorrect');
-        //     }
-        //     else if (target[i] !== e.innerText) {
-        //         e.classList.add('incorrect');
-        //         e.classList.remove('correct');
-        //     }
-        // })
+        })
 
-
-        // wro++;
-        // cpm.innerText = `Mistake :${wro}`
+        cpm.innerText = `CPM :${Math.floor((char/(x))*60)}`
+        mistake.innerText = `Mistake :${wro}`
+        let words = input.value.split(' ');
+        wpm.innerText = `WPM :${Math.floor((words.length/x)*60)}`
+        // console.log(words);
     })
+
 
 });
 
@@ -97,3 +96,12 @@ function update() {
 }
 
 update()
+
+document.querySelector('#btn').addEventListener('click', (e)=>{
+    input.disabled = true;
+    clearInterval(timer);   
+    sec = 60;
+    input.value = ""
+    start.disabled = false;
+    x = 0;
+})

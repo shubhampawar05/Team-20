@@ -55,3 +55,8 @@ main {
 button{
     padding: 10px 2rem;
 }
+textarea{
+    padding: 10px;
+    outline: none;
+    
+}
