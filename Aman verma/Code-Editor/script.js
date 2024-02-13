@@ -6,6 +6,5 @@ function fun(){
     let jscode=document.getElementById("jscode").value;
     let output=document.getElementById("output");
     output.contentDocument.body.innerHTML=htmlcode+"<style>"+csscode+"</style>";
-    output.contentWindow.eval(jscode);
-    
+    output.contentWindow.eval(jscode); 
 }
