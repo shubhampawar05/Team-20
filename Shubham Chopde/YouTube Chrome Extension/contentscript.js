@@ -10,10 +10,14 @@
       newvideoloaded();
     } else if (type === "PLAY") {
       ytVideo.currentTime = timeValue;
-    }else if (type === 'DELETE'){
-      currentbookmarkArray = currentbookmarkArray.filter((b)=> b.time != timeValue)
-      chrome.storage.sync.set({[currentVideoId]:JSON.stringify[currentbookmarkArray]})
-      response( currentbookmarkArray)
+    } else if (type === "DELETE") {
+      currentbookmarkArray = currentbookmarkArray.filter(
+        (b) => b.time != timeValue
+      );
+      chrome.storage.sync.set({
+        [currentVideoId]: JSON.stringify[currentbookmarkArray],
+      });
+      response(currentbookmarkArray);
     }
   });
 

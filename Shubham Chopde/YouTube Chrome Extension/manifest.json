@@ -1,7 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Youtube Bookmar Extensions",
-  "description": "Base Level Extension",
+  "name": "YouTube Timeline Bookmarker Effortlessly Bookmark and Navigate Video Intervals",
+  "description": "This extension serves as a convenient tool for bookmarking YouTube videos by saving specific intervals of the video timeline. It enables users to jump directly to these bookmarked intervals. facilitating the resumption of videos added to the 'Watch Later' list or the creation of important notes during lectures. Additionally. users can easily bookmark the beginning of their favorite songs for quick access",
+
   "version": "1.0",
   "author": "shubhamchopde090@gmail.com",
 
@@ -20,7 +21,7 @@
       "24":"assets/ext-icon.png",
       "32":"assets/ext-icon.png"
     },
-    "default_title": "YT Bookmarks"
+    "default_title": "YT Timeline Bookmarker"
   },
  
   "content_scripts":[

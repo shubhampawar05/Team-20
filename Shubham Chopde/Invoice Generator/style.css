@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  background-color:#d3d4d5;
+}
+
+.contaner {
+  width: 75%;
+  height: 100vh;
+  margin: 2rem auto;
+  border: 1px solid black;
+  display: flex;
+  gap: 1rem;
+  background-color: rgb(225, 116, 116);
+}
+
+.leftPart {
+  width: 65vw;
+  height: fit-content;
+  padding: 2rem 2rem;
+  border: 1px solid red;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.rightPart {
+  width: 35vw;
+  border-radius: 1rem;
+  border: 1px solid rgb(216, 242, 207);
+  background-color: rgb(181, 212, 239);
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.header-left {
+  display: flex;
+  flex-direction: column;
+}
+.dueDate>input{
+    border: none;
+    background-color: #F5F7F9;
+    border-radius: 0.2rem;
+    height: 30px;
+    padding: 0.2rem;
+    margin-left: 0.5rem;
+
+}
+.currentDate{
+    padding: 1rem 0rem;
+}
+.Invoice>input{
+    width: 50px;
+    border: none;
+    background-color: #F5F7F9;
+    border-radius: 0.2rem;
+    height: 30px;
+    padding: 0.2rem;
+
+}
+.billingDeatils {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+.billTo,
+.billFrom {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.billTo>input , .billFrom > input{
+    height: 1.7rem;
+    border: none;
+    background-color: #F5F7F9;
+    border-radius: 0.2rem;
+    height: 35px;
+    padding: 0.3rem 0.5rem;
+}
+
+
+
+
+.itemsTitle {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.item, .qnt , .price{
+    width: 20%;
+    padding: 0.5rem;
+}
+.action{
+    width: 40%;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+
+.addinItems{
+    width: 100%;
+}
+.heading{
+    display: flex;
+
+}
+tr{
+    width: 100%;
+}
+.itemcol{
+    width: 70%;
+}
+.quantitcol{
+    width: 20%;
+}
+.ratecol{
+    width: 20%;
+}
+.actioncol{
+    width: 20%;
+}
+
+.AddBtn{
+    padding: 0.5rem 0.5rem;
+    background-color: blue;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.6rem;
+}
+.totalsection{
+    border: 1px solid yellow;
+    margin-top: 1rem;
+    text-align: right;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.wraper{
+    width: 50%;
+    
+}
+.subtotalouterdiv{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+}
+.subtotal{
+    padding-left: 0.5rem;
+}
+.subtotal > label{
+    margin-right: 5rem;
+    
+}
+
+.Notes >h2{
+    padding: 0.51rem 0;
+}
