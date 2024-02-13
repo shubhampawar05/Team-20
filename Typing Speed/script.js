@@ -104,4 +104,5 @@ document.querySelector('#btn').addEventListener('click', (e)=>{
     input.value = ""
     start.disabled = false;
     x = 0;
+    
 })
