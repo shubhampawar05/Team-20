@@ -11,13 +11,18 @@
     } else if (type === "PLAY") {
       ytVideo.currentTime = timeValue;
     } else if (type === "DELETE") {
-      currentbookmarkArray = currentbookmarkArray.filter(
-        (b) => b.time != timeValue
-      );
-      chrome.storage.sync.set({
-        [currentVideoId]: JSON.stringify[currentbookmarkArray],
-      });
-      response(currentbookmarkArray);
+      chrome.storage.sync.get([currentVideoId],(itme)=>{
+        currentbookmarkArray = JSON.parse(itme[currentVideoId]);
+        
+        currentbookmarkArray = currentbookmarkArray.filter(
+          (b) => b.time != timeValue);
+
+          console.log("after filter",currentbookmarkArray);
+
+        chrome.storage.sync.set({
+          [currentVideoId]: JSON.stringify(currentbookmarkArray)});
+      })
+      
     }
   });
 
@@ -43,8 +48,8 @@
       time: currentTime,
       disc: `Bookmark at ` + convertTimeintoSecond(currentTime),
     };
-    console.log(discription);
-    console.log(currentbookmarkArray);
+    // console.log(discription);
+    // console.log(currentbookmarkArray);
 
     currentbookmarkArray = await getDatafromArray();
 

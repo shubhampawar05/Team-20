@@ -39,9 +39,4 @@ During the development of this extension, I encountered several learning opportu
 - **Difficulty:** Ensuring compatibility with various YouTube video formats and layouts required thorough testing and adjustments to the content script. However, with persistence and troubleshooting, I was able to achieve seamless functionality across different video types.
 
 
-## Acknowledgements
-
-Special thanks to the developers of the Chrome Extension API for providing the tools necessary to create this extension.
-
-
 

@@ -41,7 +41,7 @@ async function onPlay(e) {
   });
 }
 
-const onDelete = async (e) => {
+ async  function onDelete(e){
   const activeTab = await getActiveTabURL();
   const bookmarkTime = e.target.parentNode.parentNode.getAttribute("timestamp");
   const bookmarkElementToDelete = document.getElementById(
@@ -54,9 +54,8 @@ const onDelete = async (e) => {
     activeTab.id,
     {
       type: "DELETE",
-      value: bookmarkTime,
+      timeValue: bookmarkTime,
     },
-    viewBookmarks
   );
 };
 
@@ -68,7 +67,7 @@ function showBookmark(curentVideoBookmars = []) {
       addBookMark(bookmarkelement, bookmark);
     });
   } else {
-    ookmarkelement.innerHTML = `<p> No bookmark to show </p>`;
+    bookmarkelement.innerHTML = `<p> No bookmark to show </p>`;
   }
 }
 
