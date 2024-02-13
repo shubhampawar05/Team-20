@@ -15,7 +15,7 @@ body {
 
 main {
     width: 60rem;
-
+padding: 20px;
     min-width: auto;
     color: white;
 }
