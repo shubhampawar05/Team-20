@@ -38,5 +38,12 @@ During the development of this extension, I encountered several learning opportu
 - **Difficulty:** Understanding the communication flow between different components of the extension (background script, content script, and popup script) was initially challenging. However, through experimentation and documentation review, I was able to grasp the concept effectively.
 - **Difficulty:** Ensuring compatibility with various YouTube video formats and layouts required thorough testing and adjustments to the content script. However, with persistence and troubleshooting, I was able to achieve seamless functionality across different video types.
 
+![Project Logo](./assets/ext-icon.png)
+<br>
+![Project Logo](./assets/abc.png)
+<br>
+![Project Logo](./assets/def.png)
+
+
 
 
