@@ -14,8 +14,8 @@ body {
 }
 
 main {
-    width: 60%;
-
+    width: 60rem;
+padding: 20px;
     min-width: auto;
     color: white;
 }
@@ -137,4 +137,29 @@ h1{
     display: flex;
     gap: 10px;
     flex-direction: column;
+}
+@media screen and (max-width:768px) {
+    .three{
+        flex-direction: column-reverse;
+        width: fit-content;
+    }
+    .left{
+        width: 100% !important;
+    }
+    .bar{
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .barleft, .baright{
+        width: fit-content;
+    }
+    main{
+        width: 30rem;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    }
 }
